@@ -1,4 +1,6 @@
-if (process.env.DATABASE_URL !== 'production'){
+heroku config:set NODE_ENV="production"
+
+if (process.env.NODE_ENV !== 'production'){
     require('dotenv').parse()
 }
 
