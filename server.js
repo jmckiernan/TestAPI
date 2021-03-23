@@ -6,7 +6,7 @@ const mongoose = require('mongoose')
 // const serverRouter = express.Router()
 
 
-mongoose.connect('mongodb://localhost/subscribers', { useNewUrlParser: true }, { useUnifiedTopology: true })
+mongoose.connect('mongodb://mytestapi-03-22-2021.herokuapp.com/subscribers', { useNewUrlParser: true }, { useUnifiedTopology: true })
 const db = mongoose.connection
 db.on('error', (error) => console.error(error))
 db.once('open', () => console.log('Connected to Database'))
