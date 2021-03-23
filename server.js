@@ -1,4 +1,4 @@
-if (process.env.NODE_ENV !== 'production'){
+if (process.env.DATABASE_URL !== 'production'){
     require('dotenv').parse()
 }
 
